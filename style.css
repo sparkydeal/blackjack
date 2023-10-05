@@ -11,43 +11,48 @@ html {
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
-    background-color: rgb(1, 25, 1);
+    background-color: #C6ECAE;
 }
 h1 {
-    color:darkgoldenrod;
+    color:#777DA7;
     font-size: 5rem;
     text-shadow: 2px 2px 2px black;
-    margin-bottom: 1em;
+    
     
 }
 h2 {
     font-size: 2rem;
-    color: white;
-    text-shadow: 0 0 2px black;
+    
+   
 }
 p {
     font-size: 2rem;
     color: white;
+    text-shadow: 0px 0px 2px black;
 }
-.container {
+.container, .header, .content,.buttons {
+    
     display: flex;
     flex-flow: column;
     align-items: center;
     justify-content: center;
-    min-width: 90vw;
-    min-height: 100vh;
     gap: 1em;
-    
     width: 100%;
-    margin: 0 auto;
+}
+.container {
+    width: 90%;
+    margin: 2em auto;
     
     border: 1px solid black;
     
-    background-image: url('green-background.avif');
-    border: 2px solid orange;
-    border-radius: 2em;
-    padding-bottom: 1em;
+    background: #94C9A9;
+    border: 2px solid #885053;
+    border-radius: 1em;
+    
     /* border: 1px solid; */
+}
+.buttons {
+    margin-bottom: 1em;;
 }
 
     
@@ -56,9 +61,11 @@ p {
     font-style: italic;
     width: 100%;
     text-align: center;
+    
+    
 }
 .btn {
-    background: rgb(88, 65, 6);
+    background: #885053;
     width: 90%;
     border-radius: .2em;
     padding: .5em;
@@ -70,25 +77,25 @@ p {
 }
 .error {
     color: red;
-    background: white;
+    
+    
     padding: .2em .5em;
     border-radius: .2em;
 }
-.blackjack {
-    color: goldenrod;
-}
-.wonDealer {
-    color: blue; 
+
+.wonDealer, .loose, .blackjack {
+    color: white;
+    text-shadow: 1px  1px 2px black;
 }
 .moneyLost {
     color: red;
+    text-shadow: none;
 }
 .moneyWon {
     color: blue;
+    text-shadow: none;
 }
-.loose {
-    color: red;
-}
+
 #player-el {
     
 }
