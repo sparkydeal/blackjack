@@ -57,7 +57,7 @@ p {
 .container {
     width: 95%;
     height: 95vh;
-    margin:  0 auto;
+    margin:  1em auto;
     gap: 1em;
     padding-top: 2em;
     
