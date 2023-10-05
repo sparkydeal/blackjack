@@ -53,6 +53,7 @@ p {
     align-items: center;
     justify-content: space-between;
     /* border: 1px solid; */
+    padding-bottom: 1em;
 }
 #message-el {
     font-style: italic;
