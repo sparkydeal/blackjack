@@ -39,14 +39,14 @@ p {
     margin: 0 auto;
     
     border: 1px solid black;
-    gap: 1.5em;
+    
     background-image: url('green-background.avif');
     border: 2px solid orange;
     border-radius: 2em;
     /* border: 1px solid; */
 }
 .game {
-    height: 80vh;
+    height: 70vh;
     display: flex;
     flex-flow: column;
     align-items: center;
