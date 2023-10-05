@@ -6,7 +6,7 @@
 }
 html {
     font-size: 75%;
-    text-shadow: 2px 2px 2px black;
+    
 }
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -16,10 +16,15 @@ body {
 h1 {
     color:darkgoldenrod;
     font-size: 5rem;
+    text-shadow: 2px 2px 2px black;
     
 }
-p {
+h2 {
     font-size: 1.5rem;
+    color: white;
+}
+p {
+    font-size: 2rem;
     color: white;
 }
 .container {
@@ -34,7 +39,7 @@ p {
     align-items: center;
     justify-content: center;
     border: 1px solid black;
-    gap: 2em;
+    gap: 1.5em;
     background-image: url('green-background.avif');
     border: 2px solid orange;
     border-radius: 2em;
