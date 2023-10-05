@@ -5,7 +5,7 @@
 
 }
 html {
-    font-size: 60.5%;
+    font-size: 75%;
     text-shadow: 2px 2px 2px black;
 }
 body {
@@ -15,11 +15,11 @@ body {
 }
 h1 {
     color:darkgoldenrod;
-    font-size: 6rem;
+    font-size: 5rem;
     
 }
 p {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: white;
 }
 .container {
@@ -34,7 +34,7 @@ p {
     align-items: center;
     justify-content: center;
     border: 1px solid black;
-    gap: 3rem;
+    gap: 2em;
     background-image: url('green-background.avif');
     border: 2px solid orange;
     border-radius: 2em;
