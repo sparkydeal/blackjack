@@ -74,7 +74,7 @@ function renderGame() {
     else {
         sum = 0;
         removeMessageElClasses();
-        removeHeaderElClasses();
+        // removeHeaderElClasses();
         cardsEl.textContent = 'Cards: ';
         mustStartNewGame = false;
         wonDealer = false;
@@ -94,7 +94,7 @@ function renderGame() {
             c('sum > 16 && sum <= 20');
             message = 'you win the dealer';
             moneyMessage = '$'+payout[1];
-            headerEl.classList.add('moneyWon');
+            // headerEl.classList.add('moneyWon');
             messageEl.classList.add('moneyWon');
             moneyEl.classList.add('moneyWon');
             wonDealer = true;
@@ -108,7 +108,7 @@ function renderGame() {
         } else if (sum === 21) {
             message = 'you got blackJack';
             moneyMessage = '$'+payout[0];
-            headerEl.classList.add('moneyWon');
+            // headerEl.classList.add('moneyWon');
             messageEl.classList.add('moneyWon');
             moneyEl.classList.add('moneyWon');
             hasBlackJack = true;
@@ -120,7 +120,7 @@ function renderGame() {
         else {
             message = 'sorry you lose';
             moneyMessage = '$'+'('+payout[2]+')';
-            headerEl.classList.add('moneyLost');
+            // headerEl.classList.add('moneyLost');
             moneyEl.classList.add("moneyLost");
             messageEl.classList.add('moneyLost');
             isAlive = false;
