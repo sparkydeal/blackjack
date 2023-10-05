@@ -36,24 +36,41 @@ p {
     flex-flow: column;
     align-items: center;
     justify-content: center;
-    gap: 1em;
-    width: 100%;
+    border: 1px solid black;
+    padding: .2em;
+    
+    
+}
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.content {
+    height: 100%;;
 }
 .container {
     width: 90%;
-    
-    margin: 2em auto;
-    
+    height: 95vh;
+    margin:  1em auto;
+    gap: 1em;
     border: 1px solid black;
     
     background: #94C9A9;
     border: 2px solid #885053;
     border-radius: 1em;
     
+    
     /* border: 1px solid; */
 }
 .buttons {
+    height: 100%;
     margin-bottom: 1em;;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+
 }
 
     
