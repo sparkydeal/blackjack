@@ -56,7 +56,7 @@ p {
 
 .container {
     width: 95%;
-    height: 95vh;
+    height: fit-content;;
     margin:  1em auto;
     gap: 1em;
     padding-top: 2em;
@@ -148,7 +148,8 @@ p {
 
     
 }
-@media  (min-width:600px) {
+
+/* @media  (min-width:600px) {
     html {
         font-size: 100%;
     }
@@ -156,5 +157,14 @@ p {
         gap: 5rem;
     }
     
+    
+} */
+@media  (min-width:600px) {
+    html {
+        font-size: 120%;
+    }
+    .container {
+        height:fit-content;
+    }
     
 }
