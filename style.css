@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+html {
+    font-size: 62.5%;
+    text-shadow: 0 0 2px black;
+}
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+h1 {
+    color:darkgoldenrod;
+    font-size: 3rem;
+}
+p {
+    font-size: 2rem;
+    color: white;
+}
+.container {
+    padding: 2em;
+    width: 50%;
+    margin: 50px auto;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    border: 1px solid black;
+    gap: 1em;
+    background-image: url('green-background.avif');
+    border: 2px solid orange;
+    border-radius: 2em;
+}
+#message-el {
+    font-style: italic;
+}
+.btn {
+    background: goldenrod;
+    width: 60%;
+    border-radius: .2em;
+    padding: .5em;
+    color: #016f32;
+    border: 1px solid white;
+    
+    font-size: 2rem;
+
+}
+.error {
+    color: red;
+    background: white;
+    padding: .2em .5em;
+    border-radius: .2em;
+}
+.blackjack {
+    color: goldenrod;
+}
+.wonDealer {
+    color: blue; 
+}
+.moneyLost {
+    color: red;
+}
+.moneyWon {
+    color: blue;
+}
+.loose {
+    color: red;
+}
