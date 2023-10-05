@@ -50,7 +50,7 @@ p {
     gap: 1em;
     
     
-    background: #94C9A9;
+    background: #0b341b;
     border: 2px solid #885053;
     border-radius: 1em;
     
@@ -70,7 +70,7 @@ p {
     height: 100%;;
     display: flex;
     flex-flow: column;
-    justify-content: center;
+    justify-content: space-between;
     gap: 1em;
     
 }
@@ -91,11 +91,12 @@ p {
     font-style: italic;
     width: 100%;
     text-align: center;
+    color:aqua;
     
     
 }
 .btn {
-    background: #885053;
+    background: #3a2021;
     width: 10em;
     border-radius: .2em;
     padding: .5em;
@@ -116,6 +117,9 @@ p {
 .wonDealer, .loose, .blackjack {
     color: white;
     text-shadow: 1px  1px 2px black;
+}
+#money-el {
+    font-size: 3rem;
 }
 .moneyLost {
     color: red;
