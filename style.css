@@ -90,7 +90,7 @@ p {
     color: red;
 }
 #player-el {
-    padding: 1em 0;
+    padding: 1em 0 0;
 }
 @media  (min-width:600px) {
     html {
