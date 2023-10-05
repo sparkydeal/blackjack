@@ -49,6 +49,7 @@ p {
     height: 95vh;
     margin:  .2em auto;
     gap: 1em;
+    padding-top: 2em;
     
     
     background: #0b341b;
@@ -73,10 +74,11 @@ p {
     flex-flow: column;
     justify-content: space-between;
     gap: 1em;
+    padding-bottom: 3em;
     
 }
 .buttons {
-    height: 60%;
+    
     width: 100%;
     margin-bottom: 1em;;
     display: flex;
@@ -112,7 +114,7 @@ p {
 }
 
 .wonDealer, .loose, .blackjack {
-    color: rgb(229, 57, 223);
+    color: rgb(204, 214, 16);
     text-shadow: 1px  1px 2px black;
 }
 #money-el {
