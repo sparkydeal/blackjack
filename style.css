@@ -17,6 +17,7 @@ h1 {
     color:darkgoldenrod;
     font-size: 5rem;
     text-shadow: 2px 2px 2px black;
+    margin-bottom: 1em;
     
 }
 h2 {
@@ -32,9 +33,10 @@ p {
     display: flex;
     flex-flow: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     min-width: 90vw;
     min-height: 100vh;
+    gap: 1em;
     
     width: 100%;
     margin: 0 auto;
@@ -44,18 +46,12 @@ p {
     background-image: url('green-background.avif');
     border: 2px solid orange;
     border-radius: 2em;
-    /* border: 1px solid; */
-}
-.game {
-    
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: space-between;
-    /* border: 1px solid; */
-    gap: 1em;
     padding-bottom: 1em;
+    /* border: 1px solid; */
 }
+
+    
+    
 #message-el {
     font-style: italic;
     width: 100%;
@@ -94,7 +90,7 @@ p {
     color: red;
 }
 #player-el {
-    padding: 1em 0 0;
+    
 }
 @media  (min-width:600px) {
     html {
