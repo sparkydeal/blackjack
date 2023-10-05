@@ -88,6 +88,9 @@ p {
 .loose {
     color: red;
 }
+#player-el {
+    padding: 1em 0;
+}
 @media  (min-width:600px) {
     html {
         font-size: 100%;
