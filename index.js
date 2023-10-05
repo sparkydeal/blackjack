@@ -154,12 +154,12 @@ function newCard() {
         
         
         if  (mustStartNewGame) {
-            removeMessageElClasses();
+            
             messageEl.textContent = 'start a new game!';
             messageEl.classList.add('error');
             
         }  else {
-            
+            removeMessageElClasses();
             getNewCard(); 
             
             renderGame();
