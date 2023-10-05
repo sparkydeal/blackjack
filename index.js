@@ -9,7 +9,7 @@ let isAlive = true;
 let message;
 let payOutMessage;
 let player = {
-    name: 'you',
+    name: 'Cash remaining',
     chips:160
 }
 let chipsLeft = player.chips;
