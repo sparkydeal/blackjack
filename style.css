@@ -11,6 +11,7 @@ html {
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
+    background-color: rgb(1, 25, 1);
 }
 h1 {
     color:darkgoldenrod;
@@ -21,9 +22,10 @@ p {
     color: white;
 }
 .container {
+    
     min-width: 100vw;
     min-height: 100vh;
-    padding: 2em;
+    padding-top: 5em;
     width: 50%;
     margin: 0 auto;
     display: flex;
