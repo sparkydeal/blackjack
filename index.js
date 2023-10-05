@@ -20,7 +20,7 @@ let startGameBtn = document.querySelector('.start-game');
 let mustStartNewGame = false;
 let startedANewGame = false;
 let newCardBtn = document.querySelector('.new-card');
-let messageEl = document.querySelector('#message-el');
+let messageEl = document.querySelector('.message-el');
 let payoutEl = document.querySelector('#payout-el');
 let moneyEl = document.querySelector('#money-el')
 let cardsEl = document.querySelector('#cards-el');
@@ -95,7 +95,7 @@ function renderGame() {
             message = 'you win the dealer';
             moneyMessage = '$'+payout[1];
             headerEl.classList.add('moneyWon');
-            messageEl.classList.add('wonDealer');
+            messageEl.classList.add('moneyWon');
             moneyEl.classList.add('moneyWon');
             wonDealer = true;
             mustStartNewGame = true;
@@ -109,7 +109,7 @@ function renderGame() {
             message = 'you got blackJack';
             moneyMessage = '$'+payout[0];
             headerEl.classList.add('moneyWon');
-            messageEl.classList.add('blackjack');
+            messageEl.classList.add('moneyWon');
             moneyEl.classList.add('moneyWon');
             hasBlackJack = true;
             mustStartNewGame = true;
@@ -122,6 +122,7 @@ function renderGame() {
             moneyMessage = '$'+'('+payout[2]+')';
             headerEl.classList.add('moneyLost');
             moneyEl.classList.add("moneyLost");
+            messageEl.classList.add('moneyLost');
             isAlive = false;
             mustStartNewGame = true;
             // payout[2] = -5;
