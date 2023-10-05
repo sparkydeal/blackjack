@@ -32,7 +32,7 @@ p {
     flex-flow: column;
     align-items: center;
     border: 1px solid black;
-    gap: 1.5em;
+    gap: 3em;
     background-image: url('green-background.avif');
     border: 2px solid orange;
     border-radius: 2em;
