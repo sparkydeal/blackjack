@@ -12,6 +12,7 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
     background-color: #C6ECAE;
+    color:aqua;
 }
 h1 {
     color:#777DA7;
@@ -91,7 +92,7 @@ p {
     font-style: italic;
     width: 100%;
     text-align: center;
-    color:aqua;
+    
     
     
 }
@@ -108,14 +109,10 @@ p {
 }
 .error {
     color: red;
-    
-    
-    padding: .2em .5em;
-    border-radius: .2em;
 }
 
 .wonDealer, .loose, .blackjack {
-    color: white;
+    color: rgb(229, 57, 223);
     text-shadow: 1px  1px 2px black;
 }
 #money-el {
@@ -126,7 +123,7 @@ p {
     text-shadow: none;
 }
 .moneyWon {
-    color: blue;
+    color: rgb(0, 145, 255);
     text-shadow: none;
 }
 
