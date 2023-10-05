@@ -68,6 +68,10 @@ p {
 }
 .content {
     height: 100%;;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    gap: 1em;
     
 }
 .buttons {
