@@ -4,6 +4,13 @@
     box-sizing: border-box;
 
 }
+:root {
+    --container-background: #3F4531;
+    --header-color: #499167;
+    --text-color: #5FDD9D;
+    --message-color: #91F9E5;
+
+}
 html {
     font-size: 75%;
     
@@ -11,15 +18,18 @@ html {
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
-    background-color: #C6ECAE;
-    color:aqua;
+    background-color: #000000;
+    color:var(--text-color);
 }
 h1 {
-    color:#777DA7;
+    
     font-size: 5rem;
     text-shadow: 2px 2px 2px black;
     
     
+}
+.header-color {
+    color: var(--header-color);
 }
 h2 {
     font-size: 3rem;
@@ -28,10 +38,10 @@ h2 {
 }
 p {
     font-size: 2rem;
-    color: white;
+    color: var(--text-color);
     text-shadow: 0px 0px 2px black;
 }
-.container, .header, .content,.buttons, .cash {
+.container, .header, .content, .buttons, .cash {
     
     display: flex;
     flex-flow: column;
@@ -47,14 +57,15 @@ p {
 .container {
     width: 95%;
     height: 95vh;
-    margin:  .2em auto;
+    margin:  1em auto;
     gap: 1em;
     padding-top: 2em;
     
     
-    background: #0b341b;
-    border: 2px solid #885053;
+    background: var(--container-background);
+    border: 2px solid white;
     border-radius: 1em;
+    /* border: 1px solid black; */
     
     
     
@@ -66,15 +77,17 @@ p {
     align-items: center;
     
     width: 100%;
+    /* border: 1px solid red; */
     
 }
 .content {
     height: 100%;;
     display: flex;
     flex-flow: column;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 1em;
-    padding-bottom: 3em;
+    
+    /* border: 1px solid yellow; */
     
 }
 .buttons {
@@ -84,6 +97,7 @@ p {
     display: flex;
     flex-flow: row;
     justify-content: space-around;
+    /* border: 1px solid green; */
     
 
 }
@@ -94,6 +108,7 @@ p {
     font-style: italic;
     width: 100%;
     text-align: center;
+    color: var(--message-color);
     
     
     
@@ -114,7 +129,7 @@ p {
 }
 
 .wonDealer, .loose, .blackjack {
-    color: rgb(204, 214, 16);
+    color: rgb(29, 214, 16);
     text-shadow: 1px  1px 2px black;
 }
 #money-el {
@@ -125,7 +140,7 @@ p {
     text-shadow: none;
 }
 .moneyWon {
-    color: rgb(0, 145, 255);
+    color: rgb(0, 255, 68);
     text-shadow: none;
 }
 

@@ -2,7 +2,7 @@ let c = (...args) => console.log(...args);
 
 // buttons
 let cards = [];
-let cardIndex;
+
 let hasBlackJack = false;
 let wonDealer = false;
 let isAlive = true;
@@ -14,6 +14,7 @@ let player = {
 }
 let chipsLeft = player.chips;
 // payout blackJac,wonDealer,over21
+let headerEl = document.querySelector('.header-el');
 let payout = [25,5,10];
 let startGameBtn = document.querySelector('.start-game');
 let mustStartNewGame = false;
@@ -40,7 +41,7 @@ newCardBtn.addEventListener('click',newCard);
 // functions
 
 function startGame() {
-    c('in startGame');
+    // c('in startGame');
     mustStartNewGame = false; 
     startedANewGame = true;
     messageEl.textContent = '';
@@ -66,12 +67,14 @@ function startGame() {
 function renderGame() {
     c('in renderGame')
     if (mustStartNewGame) {
-        removeMessageElClasses();
+        
         messageEl.textContent = 'You must start a new game!';
         messageEl.classList.add('error');
     }
     else {
         sum = 0;
+        removeMessageElClasses();
+        removeHeaderElClasses();
         cardsEl.textContent = 'Cards: ';
         mustStartNewGame = false;
         wonDealer = false;
@@ -91,6 +94,7 @@ function renderGame() {
             c('sum > 16 && sum <= 20');
             message = 'you win the dealer';
             moneyMessage = '$'+payout[1];
+            headerEl.classList.add('moneyWon');
             messageEl.classList.add('wonDealer');
             moneyEl.classList.add('moneyWon');
             wonDealer = true;
@@ -104,6 +108,7 @@ function renderGame() {
         } else if (sum === 21) {
             message = 'you got blackJack';
             moneyMessage = '$'+payout[0];
+            headerEl.classList.add('moneyWon');
             messageEl.classList.add('blackjack');
             moneyEl.classList.add('moneyWon');
             hasBlackJack = true;
@@ -115,7 +120,7 @@ function renderGame() {
         else {
             message = 'sorry you lose';
             moneyMessage = '$'+'('+payout[2]+')';
-            messageEl.classList.add('loose');
+            headerEl.classList.add('moneyLost');
             moneyEl.classList.add("moneyLost");
             isAlive = false;
             mustStartNewGame = true;
@@ -156,10 +161,12 @@ function newCard() {
         if  (mustStartNewGame) {
             
             messageEl.textContent = 'start a new game!';
+            messageEl.classList = '';
             messageEl.classList.add('error');
             
         }  else {
-            removeMessageElClasses();
+            // removeMessageElClasses();
+            
             getNewCard(); 
             
             renderGame();
@@ -174,5 +181,12 @@ function newCard() {
 function removeMessageElClasses() {
     messageEl.className = '';
     moneyEl.className = '';
+}
+function removeHeaderElClasses() {
+    c('in removeHeaderElClasses');
+    // headerEl.classList = '';
+    headerEl.classList.remove('moneyWon','moneyLost');
+    
+
 }
 
