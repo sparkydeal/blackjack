@@ -100,7 +100,7 @@ function renderGame() {
             c('chips',chipsLeft);
 
         } else if (sum <= 20) {
-            message = 'do you want anothter card?';
+            message = 'do you want another card?';
         } else if (sum === 21) {
             message = 'you got blackJack';
             moneyMessage = '$'+payout[0];
