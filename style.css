@@ -28,21 +28,30 @@ p {
     color: white;
 }
 .container {
-    
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
     min-width: 100vw;
     min-height: 100vh;
     
     width: 90%;
     margin: 0 auto;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: center;
+    
     border: 1px solid black;
     gap: 1.5em;
     background-image: url('green-background.avif');
     border: 2px solid orange;
     border-radius: 2em;
+    /* border: 1px solid; */
+}
+.game {
+    height: 80vh;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid; */
 }
 #message-el {
     font-style: italic;
