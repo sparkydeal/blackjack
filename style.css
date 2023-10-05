@@ -72,3 +72,9 @@ p {
 .loose {
     color: red;
 }
+@media  (min-width:600px) {
+    html {
+        font-size: 100%;
+    }
+    
+}
