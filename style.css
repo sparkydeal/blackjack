@@ -36,7 +36,7 @@ p {
     flex-flow: column;
     align-items: center;
     justify-content: center;
-    gap: .5em;
+    gap: 1em;
     width: 100%;
 }
 .container {
